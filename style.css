@@ -1,0 +1,157 @@
+/* ===== WARNA (diatur di satu tempat) ===== */
+:root {
+    --pink: #ffe0ea;
+    --pink-tua: #f48fb1;
+    --cream: #fff6e8;
+    --putih: #ffffff;
+    --teks: #5a4a52;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* supaya judul tidak tertutup navbar */
+}
+
+body {
+    color: var(--teks);
+    background: repeating-linear-gradient(
+        90deg,
+        var(--pink) 0 40px,
+        var(--cream) 40px 80px
+    );
+}
+
+/* ===== NAVBAR ===== */
+.navbar-cv {
+    background-color: rgba(255, 255, 255, 0.92);
+    border-bottom: 3px dashed var(--pink-tua);
+}
+.navbar-cv .navbar-brand {
+    color: var(--pink-tua);
+    font-weight: 700;
+}
+.navbar-cv .nav-link {
+    color: var(--teks);
+}
+.navbar-cv .nav-link:hover {
+    color: var(--pink-tua);
+}
+
+/* ===== KARTU & JUDUL ===== */
+.kartu-putih {
+    background-color: var(--putih);
+    border: 3px dashed var(--pink-tua);
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.judul-section {
+    display: inline-block;
+    background-color: var(--putih);
+    color: var(--pink-tua);
+    font-weight: 700;
+    padding: 0.3rem 1.2rem;
+    border-radius: 50rem;
+    border: 2px solid var(--pink-tua);
+    margin-bottom: 1.2rem;
+}
+
+.kartu-item {
+    background-color: var(--putih);
+    border: 2px solid var(--pink-tua);
+    border-radius: 1.2rem;
+    box-shadow: 5px 5px 0 var(--pink);
+}
+
+.tahun {
+    display: inline-block;
+    background-color: var(--pink);
+    color: var(--teks);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50rem;
+}
+
+.ikon {
+    font-size: 2.5rem;
+}
+
+.daftar-data li {
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed var(--pink-tua);
+}
+
+/* ===== HERO ===== */
+.label-kecil {
+    color: var(--pink-tua);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.bingkai-foto {
+    position: relative;
+    display: inline-block;
+    background-color: var(--putih);
+    padding: 10px;
+    border: 3px solid var(--pink-tua);
+    box-shadow: 5px 5px 0 var(--pink);
+    transform: rotate(-2deg);
+}
+
+.foto-profil {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.pita {
+    position: absolute;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    z-index:1;
+}
+
+/* ===== PENGALAMAN ===== */
+/* ===== PENGALAMAN ===== */
+.foto-pengalaman {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 1.2rem 1.2rem 0 0;
+    border-bottom: 2px solid var(--pink-tua);
+    display: block;
+}
+
+/* ===== TOMBOL ===== */
+.btn-pink {
+    background-color: var(--pink-tua);
+    color: var(--putih);
+    border-radius: 50rem;
+    box-shadow: 3px 3px 0 #d36c92;
+    font-weight: 600;
+}
+.btn-pink:hover {
+    background-color: #ec6a98;
+    color: var(--putih);
+}
+
+/* ===== FOOTER ===== */
+.gelombang {
+    height: 24px;
+    background: radial-gradient(circle at 12px 24px, var(--pink-tua) 12px, transparent 13px);
+    background-size: 24px 24px;
+    background-repeat: repeat-x;
+}
+
+.footer-cv {
+    background-color: var(--pink-tua);
+    color: var(--putih);
+}
+
